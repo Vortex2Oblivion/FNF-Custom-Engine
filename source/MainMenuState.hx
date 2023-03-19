@@ -26,10 +26,6 @@ using StringTools;
 #if discord_rpc
 import Discord.DiscordClient;
 #end
-#if newgrounds
-import io.newgrounds.NG;
-import ui.NgPrompt;
-#end
 
 class MainMenuState extends MusicBeatState
 {
@@ -123,9 +119,6 @@ class MainMenuState extends MusicBeatState
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
-		versionShit.text += '(Newgrounds exclusive preview)';
-
-		// NG.core.calls.event.logEvent('swag').send();
 
 		super.create();
 	}
